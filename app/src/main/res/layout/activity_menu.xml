@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a0"
+    tools:context=".menu"
+    >
+
+
+    <Button
+        android:id="@+id/be"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:background="@color/a3"
+        android:textSize="30dp"
+        android:fontFamily="@font/jellyanika"
+        android:onClick="sigVentana"
+        android:text="@string/be" />
+
+    <Button
+        android:id="@+id/bme"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/be"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/a3"
+        android:gravity="center"
+        android:text="@string/me"
+        android:fontFamily="@font/jellyanika"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/bac"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/bme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/a3"
+        android:gravity="center"
+        android:text="@string/ac"
+        android:fontFamily="@font/jellyanika"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/bce"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/be"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/a3"
+        android:gravity="center"
+        android:text="@string/ce"
+        android:fontFamily="@font/jellyanika"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/bcya"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/a3"
+        android:gravity="center"
+        android:text="@string/cya"
+        android:fontFamily="@font/jellyanika"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/covidfsc" />
+
+
+</RelativeLayout>
