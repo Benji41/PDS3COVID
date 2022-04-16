@@ -79,4 +79,24 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    public void misEventos(View view){
+
+        Intent sig = new Intent(this, MisEventos.class);
+        startActivity(sig);
+
+    }
+
+    public void menu(View view){
+
+        Intent sig = new Intent(this, menu.class);
+        startActivity(sig);
+    }
+
+    public void logout(View view){
+
+        Intent sig = new Intent(this, MainActivity.class);
+        startActivity(sig);
+
+    }
+
 }

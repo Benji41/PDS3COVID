@@ -22,4 +22,24 @@ public class menu extends AppCompatActivity {
         startActivity(sig);
 
     }
+
+    public void salir(View view){
+
+        System.exit(0);
+    }
+
+    public void misEventos(View view){
+
+        Intent sig = new Intent(this, MisEventos.class);
+        startActivity(sig);
+
+    }
+
+    public void ventanaPerfil(View view){
+
+        Intent sig = new Intent(this, ProfileActivity.class);
+        startActivity(sig);
+
+    }
+
 }

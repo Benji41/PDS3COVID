@@ -14,28 +14,27 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class qr extends AppCompatActivity {
 
+    //En la línea 34 sustituír la cadena de x, por el usuario y contraseña de cada usuario
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
 
-        EditText txtDatos = (EditText) findViewById(R.id.txtDatos);
-        Button bG = (Button) findViewById(R.id.bG);
+        //EditText txtDatos = (EditText) findViewById(R.id.txtDatos);
+        //Button bG = (Button) findViewById(R.id.bG);
+
         ImageView imgQr = findViewById(R.id.qr);
 
-        bG.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try{
-                    BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
-                    Bitmap bitmap = barcodeEncoder.encodeBitmap(txtDatos.getText().toString(), BarcodeFormat.QR_CODE, 750, 750);
-                    imgQr.setImageBitmap(bitmap);
+        try{
+            BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
+            Bitmap bitmap = barcodeEncoder.encodeBitmap("xxxxxxxxxxxxxxxxx", BarcodeFormat.QR_CODE, 750, 750);
+            imgQr.setImageBitmap(bitmap);
 
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-        });
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
     }
 }
